@@ -2,60 +2,84 @@
 html, body {
   background-color: white;
   height: 100%;
+  font: 14px helvetica, sans-serif, solid;
 }
 
 /*#wrapper{
 	position: absolute;
 	height: 100%;
 }*/
-/* line 11, ../sass/site.scss */
+/* line 12, ../sass/site.scss */
 #sideNav {
   background-color: #333;
   width: 250px;
   height: 100%;
   float: left;
 }
-/* line 18, ../sass/site.scss */
-#sideNav span {
+/* line 19, ../sass/site.scss */
+#sideNav #content {
+  /*padding: 30px;*/
+  margin-top: 50px;
+}
+/* line 24, ../sass/site.scss */
+#sideNav #search-button, #sideNav #app-button, #sideNav #setup-button, #sideNav #manual-button, #sideNav #diary-button {
+  width: 250px;
+  height: 60px;
+  position: relative;
+}
+/* line 29, ../sass/site.scss */
+#sideNav #search-button:hover, #sideNav #app-button:hover, #sideNav #setup-button:hover, #sideNav #manual-button:hover, #sideNav #diary-button:hover {
+  background-color: #0064a6;
+}
+/* line 33, ../sass/site.scss */
+#sideNav #search-button .icon, #sideNav #app-button .icon, #sideNav #setup-button .icon, #sideNav #manual-button .icon, #sideNav #diary-button .icon {
   height: 32px;
   width: 32px;
   position: absolute;
-  padding: 10px 0;
+  left: 30px;
+  top: 15px;
 }
-/* line 25, ../sass/site.scss */
-#sideNav input {
-  height: 50px;
-}
-/* line 28, ../sass/site.scss */
-#sideNav #search {
+/* line 42, ../sass/site.scss */
+#sideNav #search-button #search, #sideNav #app-button #search, #sideNav #setup-button #search, #sideNav #manual-button #search, #sideNav #diary-button #search {
   background: url("../../Assets/Images/Search.png");
   background-repeat: no-repeat;
 }
-/* line 29, ../sass/site.scss */
-#sideNav #app {
+/* line 43, ../sass/site.scss */
+#sideNav #search-button #app, #sideNav #app-button #app, #sideNav #setup-button #app, #sideNav #manual-button #app, #sideNav #diary-button #app {
   background: url("../../Assets/Images/Calendar-Date.png");
   background-repeat: no-repeat;
 }
-/* line 30, ../sass/site.scss */
-#sideNav #setup {
+/* line 44, ../sass/site.scss */
+#sideNav #search-button #setup, #sideNav #app-button #setup, #sideNav #setup-button #setup, #sideNav #manual-button #setup, #sideNav #diary-button #setup {
   background: url("../../Assets/Images/Hospital.png");
   background-repeat: no-repeat;
 }
-/* line 31, ../sass/site.scss */
-#sideNav #manual {
+/* line 45, ../sass/site.scss */
+#sideNav #search-button #manual, #sideNav #app-button #manual, #sideNav #setup-button #manual, #sideNav #manual-button #manual, #sideNav #diary-button #manual {
   background: url("../../Assets/Images/Message-Warning.png");
   background-repeat: no-repeat;
 }
-/* line 32, ../sass/site.scss */
-#sideNav #diary {
+/* line 46, ../sass/site.scss */
+#sideNav #search-button #diary, #sideNav #app-button #diary, #sideNav #setup-button #diary, #sideNav #manual-button #diary, #sideNav #diary-button #diary {
   background: url("../../Assets/Images/Date.png");
   background-repeat: no-repeat;
 }
-/* line 34, ../sass/site.scss */
-#sideNav a {
+/* line 48, ../sass/site.scss */
+#sideNav #search-button a, #sideNav #app-button a, #sideNav #setup-button a, #sideNav #manual-button a, #sideNav #diary-button a {
   color: white;
   text-decoration: none;
-  padding: 20px 50px;
-  font: sans-serif, 14px solid;
-  display: block;
+  padding: 20px 50px 20px 50px;
+  margin-left: 40px;
+  display: inline-block;
+}
+/* line 58, ../sass/site.scss */
+#sideNav #search-button {
+  height: auto;
+}
+/* line 62, ../sass/site.scss */
+#sideNav input {
+  margin-left: 25px;
+  height: 50px;
+  width: 200px;
+  font-size: 1.2em;
 }

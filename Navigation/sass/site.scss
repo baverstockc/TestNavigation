@@ -1,6 +1,7 @@
 html, body {
 	background-color: white;
 	height: 100%;
+	font:  14px helvetica, sans-serif, solid;
 }
 
 /*#wrapper{
@@ -15,17 +16,30 @@ html, body {
 	height: 100%;
 	float: left;
 	
-	span{
+	#content{
+		/*padding: 30px;*/
+		margin-top: 50px;
+	}
+
+	#search-button, #app-button, #setup-button, #manual-button, #diary-button{
+		width: 250px;
+		height: 60px;
+		position: relative;
+		
+		&:hover{
+			background-color: #0064a6;
+	}
+
+	.icon{
 		height: 32px;
 		width: 32px;
 		position: absolute;
-		padding: 10px 0;
+		left: 30px;
+		top: 15px;
 	}
 
-	input{
-		height: 50px;
-	}
-	#search{background: url('../../Assets/Images/Search.png'); background-repeat:no-repeat;}
+	
+	#search{ background: url('../../Assets/Images/Search.png'); background-repeat:no-repeat;}
 	#app{background: url('../../Assets/Images/Calendar-Date.png'); background-repeat:no-repeat;}
 	#setup{background: url('../../Assets/Images/Hospital.png'); background-repeat:no-repeat;}
 	#manual{background: url('../../Assets/Images/Message-Warning.png'); background-repeat:no-repeat;}
@@ -34,8 +48,21 @@ html, body {
 	a{
 		color: white;
 		text-decoration: none;
-		padding: 20px 50px;
-		font: sans-serif, 14px solid;
-		display: block;
+		padding: 20px 50px 20px 50px;
+		margin-left: 40px;
+		display: inline-block;
+		
+		}
+	}
+
+	#search-button{
+		height: auto;
+	}
+
+	input{
+		margin-left: 25px;
+		height: 50px;
+		width: 200px;
+		font-size: 1.2em;
 	}
 }
