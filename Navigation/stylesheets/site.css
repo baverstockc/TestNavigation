@@ -1,5 +1,61 @@
 /* line 1, ../sass/site.scss */
-body {
+html, body {
+  background-color: white;
+  height: 100%;
+}
+
+/*#wrapper{
+	position: absolute;
+	height: 100%;
+}*/
+/* line 11, ../sass/site.scss */
+#sideNav {
   background-color: #333;
+  width: 250px;
+  height: 100%;
+  float: left;
+}
+/* line 18, ../sass/site.scss */
+#sideNav span {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  padding: 10px 0;
+}
+/* line 25, ../sass/site.scss */
+#sideNav input {
+  height: 50px;
+}
+/* line 28, ../sass/site.scss */
+#sideNav #search {
+  background: url("../../Assets/Images/Search.png");
+  background-repeat: no-repeat;
+}
+/* line 29, ../sass/site.scss */
+#sideNav #app {
+  background: url("../../Assets/Images/Calendar-Date.png");
+  background-repeat: no-repeat;
+}
+/* line 30, ../sass/site.scss */
+#sideNav #setup {
+  background: url("../../Assets/Images/Hospital.png");
+  background-repeat: no-repeat;
+}
+/* line 31, ../sass/site.scss */
+#sideNav #manual {
+  background: url("../../Assets/Images/Message-Warning.png");
+  background-repeat: no-repeat;
+}
+/* line 32, ../sass/site.scss */
+#sideNav #diary {
+  background: url("../../Assets/Images/Date.png");
+  background-repeat: no-repeat;
+}
+/* line 34, ../sass/site.scss */
+#sideNav a {
   color: white;
+  text-decoration: none;
+  padding: 20px 50px;
+  font: sans-serif, 14px solid;
+  display: block;
 }

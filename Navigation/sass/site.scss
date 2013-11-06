@@ -1,4 +1,41 @@
-body {
+html, body {
+	background-color: white;
+	height: 100%;
+}
+
+/*#wrapper{
+	position: absolute;
+	height: 100%;
+}*/
+
+#sideNav {
+	
 	background-color: #333;
-	color: white;
+	width: 250px;
+	height: 100%;
+	float: left;
+	
+	span{
+		height: 32px;
+		width: 32px;
+		position: absolute;
+		padding: 10px 0;
+	}
+
+	input{
+		height: 50px;
+	}
+	#search{background: url('../../Assets/Images/Search.png'); background-repeat:no-repeat;}
+	#app{background: url('../../Assets/Images/Calendar-Date.png'); background-repeat:no-repeat;}
+	#setup{background: url('../../Assets/Images/Hospital.png'); background-repeat:no-repeat;}
+	#manual{background: url('../../Assets/Images/Message-Warning.png'); background-repeat:no-repeat;}
+	#diary{background: url('../../Assets/Images/Date.png'); background-repeat:no-repeat;}
+
+	a{
+		color: white;
+		text-decoration: none;
+		padding: 20px 50px;
+		font: sans-serif, 14px solid;
+		display: block;
+	}
 }
