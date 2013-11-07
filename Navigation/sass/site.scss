@@ -1,15 +1,96 @@
 html, body {
 	background-color: white;
 	height: 100%;
-	font:  14px helvetica, sans-serif, solid;
+	font: helvetica, sans-serif, solid;
 }
 
+$color: #0064A6;
+$rowColor: #217AB2;
 /*#wrapper{
 	position: absolute;
 	height: 100%;
 }*/
 
-#sideNav {
+#header{
+	background-color: $color;
+	color: white;
+}
+
+
+li {
+	display: inline;
+	font-size: 1.5em;
+	line-height: 32px;
+}
+	a {
+		color: white;
+		text-decoration: none;
+
+		&:hover {
+			background-color: #333;
+			
+		}
+	}
+
+#title{
+	background-color: white;
+	font-weight: bold;
+	padding: 5px;
+}
+
+#header-title {
+	font-size: 2.0em;
+}
+
+#selected {
+	background-color: lightPink;
+}
+
+.row {
+	background-color: lighten($rowColor, 41%);
+	border-bottom: solid 1px $color;
+	font-size: 0.83em;
+}
+
+.icon {
+		height: 32px;
+		width: 32px;
+		float: left;
+		margin-right: 10px;
+	}
+
+/*.icon{
+		height: 32px;
+		width: 32px;
+	}*/
+
+#app{
+	/*position: absolute;
+	left: -170px;
+	top: 5px;*/
+}	
+
+/*#search-button, #app-button, #user-button,, #list-button{
+		height: auto;
+		display: inline;
+		position: absolute;
+}*/
+
+
+#app{ background: url('../../Assets/Images/Reminder.png'); background-repeat:no-repeat;}
+	#date{background: url('../../Assets/Images/Calendar-Date.png'); background-repeat:no-repeat;}
+	#find{background: url('../../Assets/Images/User-Find.png'); background-repeat:no-repeat;}
+	#list{background: url('../../Assets/Images/Table-of-Contents.png'); background-repeat:no-repeat;}
+	#arrivals{background: url('../../Assets/Images/Check-Box.png'); background-repeat:no-repeat;}
+
+
+
+
+#app-button, #user-button, #manual-button, #diary-button{
+		position: relative;
+}
+
+/*#sideNav {
 	
 	background-color: #333;
 	width: 250px;
@@ -17,11 +98,11 @@ html, body {
 	float: left;
 	
 	#content{
-		/*padding: 30px;*/
+		/*padding: 30px;
 		margin-top: 50px;
-	}
+	}*/
 
-	#search-button, #app-button, #setup-button, #manual-button, #diary-button{
+	/*#search-button, #app-button, #setup-button, #manual-button, #diary-button{
 		width: 250px;
 		height: 60px;
 		position: relative;
@@ -65,4 +146,4 @@ html, body {
 		width: 200px;
 		font-size: 1.2em;
 	}
-}
+}*/

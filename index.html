@@ -2,10 +2,128 @@
 <html ng-app>
 	<head>
 		<link rel="stylesheet" type="text/css" href="Navigation/stylesheets/site.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 	</head>
 	<body>
-		
-			<div id="sideNav">
+
+		<!--  Bootstrap  -->
+		<div class="row" id="header">
+			<ul id="header-list">
+				<li id="header-title" class="col-md-3">
+					<a href="#"><span id="app" class="icon"></span>Appointments</a>
+				</li>	
+			
+				<li id="header-date" class="col-md-3">
+					<a href="#"><span id="date" class="icon"></span>04-Aug-2013</a>
+				</li>
+
+				<li id="find-patient" class="col-md-2">
+					<a href="#"><span id="find" class="icon"></span>Find Patient</a>
+				</li>
+
+				<li id="today-list" class="col-md-2">
+					<a href="#"><span id="list" class="icon"></span>Today List</a>
+				</li>
+
+				<li class="col-md-2">
+					<a href="#"><span id="arrivals" class="icon"></span>Arrivals</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="row" id="title">
+			<div class="col-md-3"><input type="search" name="search" value="Filter patient"></div>
+			<div class="col-md-3"><input type="search" name="search" value="Location"></div>
+			<div class="col-md-3"><input type="search" name="search" value="Clinic Group(s)"></div>
+			<div class="col-md-3"><input type="search" name="search" value="Select Clinics"></div><br>
+		</div>
+
+
+		<div class="row" id="item">
+			<div class="col-md-1">Date</div>
+			<div class="col-md-1">Time</div>
+			<div class="col-md-2">Patient</div>
+			<div class="col-md-2"></div>
+			<div class="col-md-1"></div>
+			<div class="col-md-1">Named Performer</div>
+			<div class="col-md-1">Appointment Type</div>
+			<div class="col-md-1">Priority</div>
+			<div class="col-md-2">Clinic</div>
+		</div>
+
+		<div class="row" id="selected">
+			<div class="col-md-1">03-Aug-2013</div>
+			<div class="col-md-1">09:00</div>
+			<div class="col-md-2"><strong>FITZGERALD</strong>, Charles (Mr)</div>
+			<div class="col-md-2">Born <strong>01-Jan-1992</strong></div>
+			<div class="col-md-1">Gender <strong>Male</strong></div>
+			<div class="col-md-1"><strong>SMITH</strong>, Ian (Dr)</div>
+			<div class="col-md-1">First Outpatient</div>
+			<div class="col-md-1">Routine</div>
+			<div class="col-md-2">Woodgrove Surgery</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-1">04-Aug-2013</div>
+			<div class="col-md-1">10:00</div>
+			<div class="col-md-2"><strong>RICHARDSON</strong>, Wendy (Ms)</div>
+			<div class="col-md-2">Born <strong>12-Oct-1996</strong></div>
+			<div class="col-md-1">Gender <strong>Female</strong></div>
+			<div class="col-md-1"><strong>SMITH</strong>, Ian (Dr)</div>
+			<div class="col-md-1">First Outpatient</div>
+			<div class="col-md-1">Routine</div>
+			<div class="col-md-2">Woodgrove Surgery</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-1">04-Aug-2013</div>
+			<div class="col-md-1">10:15</div>
+			<div class="col-md-2"><strong>RICHARDSON</strong>, Wendy (Ms)</div>
+			<div class="col-md-2">Born <strong>12-Oct-1996</strong></div>
+			<div class="col-md-1">Gender <strong>Female</strong></div>
+			<div class="col-md-1"><strong>SMITH</strong>, Ian (Dr)</div>
+			<div class="col-md-1">First Outpatient</div>
+			<div class="col-md-1">Routine</div>
+			<div class="col-md-2">Woodgrove Surgery</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-1">04-Aug-2013</div>
+			<div class="col-md-1">10:30</div>
+			<div class="col-md-2"><strong>CAMERON</strong>, Maria (Mrs)</div>
+			<div class="col-md-2">Born <strong>21-Apr-1972</strong></div>
+			<div class="col-md-1">Gender <strong>Female</strong></div>
+			<div class="col-md-1"><strong>SMITH</strong>, Ian (Dr)</div>
+			<div class="col-md-1">First Outpatient</div>
+			<div class="col-md-1">Routine</div>
+			<div class="col-md-2">Woodgrove Surgery</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-1">04-Aug-2013</div>
+			<div class="col-md-1">10:45</div>
+			<div class="col-md-2"><strong>CAMERON</strong>, Maria (Mrs)</div>
+			<div class="col-md-2">Born <strong>21-Apr-1972</strong></div>
+			<div class="col-md-1">Gender <strong>Female</strong></div>
+			<div class="col-md-1"><strong>SMITH</strong>, Ian (Dr)</div>
+			<div class="col-md-1">First Outpatient</div>
+			<div class="col-md-1">Routine</div>
+			<div class="col-md-2">Woodgrove Surgery</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-1">04-Aug-2013</div>
+			<div class="col-md-1">11:00</div>
+			<div class="col-md-2"><strong>JONES</strong>, Bob (Mr)</div>
+			<div class="col-md-2">Born <strong>10-Mar-2000</strong></div>
+			<div class="col-md-1">Gender <strong>Male</strong></div>
+			<div class="col-md-1"><strong>SMITH</strong>, Ian (Dr)</div>
+			<div class="col-md-1">First Outpatient</div>
+			<div class="col-md-1">Routine</div>
+			<div class="col-md-2">Woodgrove Surgery</div>
+		</div>
+			<!--  Apex  -->
+			<!-- <div id="sideNav">
 				<div id="content">
 					<div id="search-button">
 						<span class="icon" id="search"></span>
@@ -30,7 +148,7 @@
 						<span><a href="#">Clinic Diary</a>
 					</div>
 				</div>	
-			</div>
+			</div> -->
 
     	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
 		<script src="scripts/nav.js"></script>
