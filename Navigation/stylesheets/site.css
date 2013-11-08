@@ -21,42 +21,45 @@ li {
   font-size: 1.5em;
   line-height: 32px;
 }
-
 /* line 25, ../sass/site.scss */
-a {
+li a {
+  color: white;
+}
+/* line 28, ../sass/site.scss */
+li a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 29, ../sass/site.scss */
-a:hover {
+/* line 37, ../sass/site.scss */
+li:hover {
   background-color: #333;
 }
 
-/* line 35, ../sass/site.scss */
+/* line 43, ../sass/site.scss */
 #title {
   background-color: white;
   font-weight: bold;
   padding: 5px;
 }
 
-/* line 41, ../sass/site.scss */
+/* line 49, ../sass/site.scss */
 #header-title {
   font-size: 2.0em;
 }
 
-/* line 45, ../sass/site.scss */
+/* line 53, ../sass/site.scss */
 #selected {
   background-color: lightPink;
 }
 
-/* line 49, ../sass/site.scss */
+/* line 57, ../sass/site.scss */
 .row {
   background-color: #b3d9f1;
   border-bottom: solid 1px #0064a6;
   font-size: 0.83em;
 }
 
-/* line 55, ../sass/site.scss */
+/* line 63, ../sass/site.scss */
 .icon {
   height: 32px;
   width: 32px;
@@ -68,7 +71,7 @@ a:hover {
 		height: 32px;
 		width: 32px;
 	}*/
-/* line 67, ../sass/site.scss */
+/* line 75, ../sass/site.scss */
 #app {
   /*position: absolute;
   left: -170px;
@@ -80,37 +83,37 @@ a:hover {
 		display: inline;
 		position: absolute;
 }*/
-/* line 80, ../sass/site.scss */
+/* line 88, ../sass/site.scss */
 #app {
   background: url("../../Assets/Images/Reminder.png");
   background-repeat: no-repeat;
 }
 
-/* line 81, ../sass/site.scss */
+/* line 89, ../sass/site.scss */
 #date {
   background: url("../../Assets/Images/Calendar-Date.png");
   background-repeat: no-repeat;
 }
 
-/* line 82, ../sass/site.scss */
+/* line 90, ../sass/site.scss */
 #find {
   background: url("../../Assets/Images/User-Find.png");
   background-repeat: no-repeat;
 }
 
-/* line 83, ../sass/site.scss */
+/* line 91, ../sass/site.scss */
 #list {
   background: url("../../Assets/Images/Table-of-Contents.png");
   background-repeat: no-repeat;
 }
 
-/* line 84, ../sass/site.scss */
+/* line 92, ../sass/site.scss */
 #arrivals {
   background: url("../../Assets/Images/Check-Box.png");
   background-repeat: no-repeat;
 }
 
-/* line 89, ../sass/site.scss */
+/* line 97, ../sass/site.scss */
 #app-button, #user-button, #manual-button, #diary-button {
   position: relative;
 }
